@@ -44,7 +44,12 @@ var clarg = function () {
       if (isOption) {
         // set option to true
         var curName = _cleanUpOptionName(current);
-        rtn.opts[curName] = true;
+        var curNameSplit = curName.split('=');
+        if (curNameSplit[1]) {
+          rtn.opts[curNameSplit[0]] = curNameSplit[1];
+        } else {
+          rtn.opts[curNameSplit[0]] = true;
+        }
       } else {
         // or set a value to it
         var prevName = _cleanUpOptionName(rawArgs[i-1]);
