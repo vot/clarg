@@ -27,7 +27,7 @@ var clarg = function () {
     raw: rawArgs
   }
 
-  for (i = 0; i < rawArgs.length; i++) {
+  for (var i = 0; i < rawArgs.length; i++) {
     var isOption = false;
     var current = rawArgs[i];
 
