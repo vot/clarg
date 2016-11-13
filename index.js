@@ -7,6 +7,8 @@
  * @return {object}
  */
 
+// TODO: break combined short flags to individual (-dv into -d and -c)
+
 var _cleanUpOptionName = function (str) {
   if (str[0] === '-' && str[1] === '-') {
     return str.substr(2);
