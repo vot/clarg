@@ -10,7 +10,7 @@
 [npm-dl-img]: https://img.shields.io/npm/dm/clarg.svg
 [travis-img]: https://img.shields.io/travis/vot/clarg.svg
 [travis-url]: https://travis-ci.org/vot/clarg
-[coveralls-img]: https://img.shields.io/coveralls/vot/clarg
+[coveralls-img]: https://img.shields.io/coveralls/vot/clarg.svg
 [coveralls-url]: https://coveralls.io/github/vot/clarg
 
 
