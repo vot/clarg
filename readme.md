@@ -3,12 +3,15 @@
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][npm-dl-img]][npm-url]
 [![Travis build][travis-img]][travis-url]
+[![Coveralls coverage][coveralls-img]][coveralls-url]
 
 [npm-url]: https://npmjs.org/package/clarg
 [npm-img]: https://img.shields.io/npm/v/clarg.svg
 [npm-dl-img]: https://img.shields.io/npm/dm/clarg.svg
 [travis-img]: https://img.shields.io/travis/vot/clarg.svg
 [travis-url]: https://travis-ci.org/vot/clarg
+[coveralls-img]: https://img.shields.io/coveralls/vot/ffbinaries-node.svg
+[coveralls-url]: https://coveralls.io/github/vot/ffbinaries-node
 
 
 The simplest command-line parsing utility for node.js
