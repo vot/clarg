@@ -2,10 +2,13 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][npm-dl-img]][npm-url]
+[![Travis build][travis-img]][travis-url]
 
 [npm-url]: https://npmjs.org/package/clarg
 [npm-img]: https://img.shields.io/npm/v/clarg.svg
 [npm-dl-img]: https://img.shields.io/npm/dm/clarg.svg
+[travis-img]: https://img.shields.io/travis/vot/clarg.svg
+[travis-url]: https://travis-ci.org/vot/clarg
 
 
 The simplest command-line parsing utility for node.js
@@ -32,21 +35,21 @@ It doesn't matter where in code you run it - you will always get the same result
 which is really just a broken down list of arguments and options passed to the process.
 
 It supports options specified with single dashes, double dashes and their values
-after a space or an equal sign. Anything goes as long as your options come after arguments.
+after a space or an equal sign.
 
-```
-var arguments = require('clarg')();
-console.log(arguments);
-```
+The only thing that matters is the order: first you specify arguments, after
+the first dash has been spotted everything gets treated as an option.
 
-Running this script with
+## Example
+
+Running the script below with these arguments
 `node test.js start countdown --format=long -detach -parse=yes`
-will produce something like this:
+will produce an object like this:
 
 ```
 {
   args: [ 'start', 'countdown' ],
-  opts: [ format: 'long', detach: true, parse: 'yes' ],
+  opts: { format: 'long', detach: true, parse: 'yes' },
   raw: [ 'start', 'countdown', '--format=long', '-detach', '-parse=yes' ]
 }
 ```

@@ -9,7 +9,7 @@ describe('clarg', function() {
     expect(Object.keys(parsed)).to.include.members(['args', 'opts', 'raw']);
 
     expect(Array.isArray(parsed.args)).to.be.ok;
-    expect(Array.isArray(parsed.opts)).to.be.ok;
+    expect(typeof parsed.opts).to.equal('object');
     expect(Array.isArray(parsed.raw)).to.be.ok;
   });
 
@@ -17,8 +17,12 @@ describe('clarg', function() {
     var parsed = clarg(defaultArgs);
 
     expect(parsed.args.length).to.be.ok;
-    expect(parsed.opts.length).to.equal(0);
-    expect(parsed.raw).to.deep.equal(defaultArgs);
+    expect(Object.keys(parsed.opts)).to.include.members(['flag', 'equals', 'space']);
+    expect(parsed.raw).to.include.members(defaultArgs);
+
+    expect(parsed.opts.flag).to.equal(true);
+    expect(parsed.opts.equals).to.equal('true');
+    expect(parsed.opts.space).to.equal('yes');
   });
 
   it('should use process arguments if none are provided', function() {

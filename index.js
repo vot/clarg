@@ -25,7 +25,7 @@ var clarg = function (argsIn) {
 
   var rtn = {
     args: [],
-    opts: [],
+    opts: {},
     raw: rawArgs
   }
 
