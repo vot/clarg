@@ -4,7 +4,7 @@
   "description": "Simple command line argument parser",
   "main": ".",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js node test.js first second --flag --equals=true --space yes"
   },
   "repository": {
     "type": "git",
