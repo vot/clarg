@@ -4,7 +4,7 @@
   "description": "Simple command line argument parser",
   "main": ".",
   "scripts": {
-    "test": "node test.js node test.js first second --flag --equals=true --space yes"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/vot/clarg/issues"
   },
-  "homepage": "https://github.com/vot/clarg"
+  "homepage": "https://github.com/vot/clarg",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0"
+  }
 }

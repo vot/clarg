@@ -19,8 +19,8 @@ var _cleanUpOptionName = function (str) {
   }
 }
 
-var clarg = function () {
-  var rawArgs = process.argv.slice(2);
+var clarg = function (argsIn) {
+  var rawArgs = argsIn || process.argv.slice(2);
   var reachedOpts = false;
 
   var rtn = {
