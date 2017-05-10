@@ -10,8 +10,8 @@
 [npm-dl-img]: https://img.shields.io/npm/dm/clarg.svg
 [travis-img]: https://img.shields.io/travis/vot/clarg.svg
 [travis-url]: https://travis-ci.org/vot/clarg
-[coveralls-img]: https://img.shields.io/coveralls/vot/ffbinaries-node.svg
-[coveralls-url]: https://coveralls.io/github/vot/ffbinaries-node
+[coveralls-img]: https://img.shields.io/coveralls/vot/clarg
+[coveralls-url]: https://coveralls.io/github/vot/clarg
 
 
 The simplest command-line parsing utility for node.js
