@@ -2,14 +2,14 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][npm-dl-img]][npm-url]
-[![Travis build][travis-img]][travis-url]
+[![Build status][circle-img]][circle-url]
 [![Coveralls coverage][coveralls-img]][coveralls-url]
 
 [npm-url]: https://npmjs.org/package/clarg
 [npm-img]: https://img.shields.io/npm/v/clarg.svg
 [npm-dl-img]: https://img.shields.io/npm/dm/clarg.svg
-[travis-img]: https://img.shields.io/travis/vot/clarg.svg
-[travis-url]: https://travis-ci.org/vot/clarg
+[circle-img]: https://img.shields.io/circleci/project/github/vot/clarg/master.svg
+[circle-url]: https://circleci.com/gh/vot/clarg/tree/master
 [coveralls-img]: https://img.shields.io/coveralls/vot/clarg.svg
 [coveralls-url]: https://coveralls.io/github/vot/clarg
 
